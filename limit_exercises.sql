@@ -6,6 +6,6 @@ FROM employees
 WHERE last_name LIKE 'Z%'
 LIMIT 10
 
-SELECT salary
+SELECT *
 FROM salaries
 WHERE salary
