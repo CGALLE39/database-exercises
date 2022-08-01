@@ -1,11 +1,15 @@
 USE employees;
 USE salaries;
+SELECT DISTINCT title FROM titles;
 
-    SELECT last_name
-FROM employees
-WHERE last_name LIKE 'Z%'
-LIMIT 10
+SELECT DISTINCT last_name
+ORDER BY employees
+WHERE last_name DESC
+LIMIT 10;
 
-SELECT *
-FROM salaries
-WHERE salary
+SELECT emp_no FROM salaries
+ORDER BY salary DESC
+LIMIT 4
+OFFSET 46;
+
+
